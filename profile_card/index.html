@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Profile Card</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+    body{
+        box-sizing: border-box;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        font-family: "Roboto", sans-serif;
+        display: flex;
+        min-height: 100vh;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .card_continer{
+        position: relative;
+        border-radius: 5%;
+        padding: 3% 0;
+        max-width: 300px;
+        max-height: 600;
+        box-shadow: -4px 1px 37px -15px rgba(0,0,0,0.42);
+        -webkit-box-shadow: -4px 1px 37px -15px rgba(0,0,0,0.42);
+        -moz-box-shadow: -4px 1px 37px -15px rgba(0,0,0,0.42);
+    }
+    img{
+        width: 50%;
+        border-radius: 50%;
+        display:block;
+        margin:0 auto;
+        border: 0px solid #111111;
+        transition: all 0.4s ease-in;
+        cursor: pointer;
+        margin-bottom: 20px;
+        box-shadow: 0;
+    }
+    img:hover{
+        border: 4px solid #111111;
+        box-shadow: -4px 1px 37px 10px rgba(0,0,0,0.1);
+        -webkit-box-shadow: -4px 1px 37px 10px rgba(0,0,0,0.1);
+        -moz-box-shadow: -4px 1px 37px 10px rgba(0,0,0,0.1);
+    }
+    .text-box{
+        text-align: center;
+    }
+    h2, p{
+        font-size: 20px;
+        margin: 0;
+        padding: 0;
+    }
+    h2{
+        font-size: 25px;
+        color: #121212;
+        margin-bottom: 8px;
+    }
+    .occupation{
+        font-size: 17px;
+        font-weight: bold;
+        color: #7b7b7b;
+        margin-bottom: 10px;
+    }
+    .description{
+        padding: 0 3%;
+        font-size: 15px;
+        color: #7b7b7b;
+        margin-bottom: 30px;
+    }
+
+    .contuct{
+        display: flex;
+        justify-content: space-around;
+        cursor: pointer;
+        font-weight: 500;
+    }
+    .btn{
+        padding: 10px 30px;
+        border-radius: 8px;
+    }
+    .email{
+        border:2px solid #111111;
+        transition: all 0.3s ease-in;
+    }
+    .email:hover{
+        color: white;
+        background-color: #111111;
+    }
+    .phone{
+        color: white;
+        background-color: #111111;
+        transition: all 0.3s ease-in;
+    }
+    .phone:hover{
+        border:2px solid #111111;
+        color: #111111;
+        background-color: white;
+    }
+
+    .pro{
+        position: absolute;
+        top: 15px;
+        left: 20px;
+        background-color: #888888;
+        color: white;
+        padding: 2px 6px;
+        border-radius: 4px;
+        font-size: 15px;
+    }
+
+</style>
+<body>
+    <div class="card_continer">
+        <div class="card">
+            <img src="03.jpg" alt="">
+            <div class="text-box">
+                <h2>Bijoy Datta</h2>
+                <p class="occupation">Web Developer</p>
+                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="contuct">
+                <div class="email btn">Email</div>
+                <div class="phone btn">Phone</div>
+            </div>
+        </div>
+        <div class="pro">PRO</div>
+    </div>
+</body>
+</html>
